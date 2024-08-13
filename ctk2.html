@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: rgb(157, 157, 157);
+        }
+        .image-height {
+            height: 290px;
+            object-fit: cover; 
+            padding: 10px;
+            border-radius: 25px;
+        }
+        .third-card {
+            background-color: rgb(166, 166, 181);
+            padding: 10px;
+            text-align: center;
+        }
+        .button {
+            background-color: rgb(255, 132, 0);
+        }
+        .small-button {
+            width: 58px; 
+            height: 25px; 
+            padding: 2px 10px; 
+            font-size: 12px; 
+        }
+        .first {
+            width: 100px; 
+        }
+        .logo {
+            
+            margin-bottom: 10px;
+        }
+        .logo i {
+            padding-right: 15px;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 13px;
+        }
+        .rating {
+            text-align: center;
+        }
+        .btn-group {
+            justify-content: center;
+        }
+        .btn-group button {
+            margin: 0 2px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                max-width: 100%;
+                margin: auto;
+            }
+            .image-height {
+                height: 150px;
+            }
+            .third-card {
+                margin-top: 20px;
+            }
+
+            #p1{
+                margin: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .image-height {
+                height: 100%;
+                width: 100%;
+            }
+            .small-button {
+                width: 50px;
+                height: 20px;
+                font-size: 10px;
+            }
+            .first {
+                width: 80px;
+            }
+            .third-card {
+                margin-top: 20px;
+            }
+            .logo {
+                margin-left: 0;
+            }
+
+            #p1{
+                width: 73%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img src="ksh.jpg" class="img-fluid image-height" alt="img" style="width: 93%;">  
+                    <button type="button" class="btn" style="margin-top: -120px; margin-left: 25px; height: 50px; color: rgb(69, 186, 240); background-color: white;"><i class="fa-regular fa-circle-xmark" style="color: rgb(69, 186, 240); font-size: 16px; padding-bottom: -20px;"></i> &nbsp;compare</button>
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="btn-group mt-2 mb-3" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-outline-warning small-button first">Group Tour</button>
+                        <button type="button" class="btn button small-button">JKHL</button>
+                        <button type="button" class="btn btn-outline-danger rounded small-button" style="margin-left: 5px;" >Family</button>
+                    </div>
+                    <p class="card-title"><b>Kashmir Escape</b></p>
+                    <div class="logo">
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-van-shuttle"></i>
+                        <i class="fa-solid fa-plane"></i>
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <br>
+                    <div class="card-text">
+                        <i class="fa-solid fa-location-dot"></i> Travel 5 Days | 1 Country | 3 Cities &nbsp; <i class="fa-solid fa-caret-down"></i>
+                        <hr>
+                        <i class="fa-solid fa-ticket"></i> 2 Departure cities 10 Departure dates &nbsp; <button class="btn  small-button" style="font-size: 6px;background-color: lightgreen;">lowest price 27 Aug,24</button>&nbsp;<i class="fa-solid fa-caret-down"></i>
+                        <hr>
+                    </div>
+                    <div class="rating mt-3">
+                        <i class="bi bi-star-fill text-warning" data-value="3"></i>
+                        <p class="card-text d-flex align-items-center">
+                            <button type="button" class="btn button me-2 small-button"><i class="fa-regular fa-star"> 5</i></button>
+                            74 Reviews
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 third-card">
+                    <div class="mt-2"><i class="fa-solid fa-shield-heart"></i></div>
+                    <div class="mt-2 text-success">Super deal price</div>
+                    <div class="mt-2" style="font-size: 12px;">Starts from</div>
+                    <div class="mt-2" style="font-size: 18px;">RS 55,000</div>
+                    <div class="mt-2" style="font-size: 10px;">per person on twin sharing</div>
+                    <div class="mt-2" style="font-size: 10px;"><a href="#">from rs1,855/month</a></div>
+                    <button type="button" id="p1" class="btn btn-warning mt-2 " style="width: 73%;">view details</button>
+                    <div class="btn-group mt-2 " role="group" aria-label="basic example">
+                        <button type="button" class="btn btn-outline-primary medium-button"><small>Quick quote</small></button>
+                        <button type="button" class="btn btn-outline-dark medium-button" style="margin-left: 5px;"><small>Enquire Now</small></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <div class="container mt-5">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/6155700/pexels-photo-6155700.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid image-height" alt="img" style="width: 93%;">  
+                    <button type="button" class="btn" style="margin-top: -120px; margin-left: 25px; height: 50px; color: rgb(69, 186, 240); background-color: white;"><i class="fa-regular fa-circle-xmark" style="color: rgb(69, 186, 240); font-size: 16px; padding-bottom: -20px;"></i> &nbsp;compare</button>
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="btn-group mt-2 mb-3" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-outline-warning small-button first">Group Tour</button>
+                        <button type="button" class="btn button small-button">JKHL</button>
+                        <button type="button" class="btn btn-outline-danger rounded small-button" style="margin-left: 5px;" >Family</button>
+                    </div>
+                    <p class="card-title"><b>Highlights of Kashmir </b></p>
+                    <div class="logo">
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-van-shuttle"></i>
+                        <i class="fa-solid fa-plane"></i>
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <br>
+                    <div class="card-text">
+                        <i class="fa-solid fa-location-dot"></i> Travel 6 Days | 1 Country | 4 Cities &nbsp; <i class="fa-solid fa-caret-down"></i>
+                        <hr>
+                        <i class="fa-solid fa-ticket"></i> 4 Departure cities 16 Departure dates &nbsp;&nbsp; <button class="btn  small-button" style="font-size: 6px; background-color: lightgreen">lowest price 27 Aug,24</button>&nbsp;<i class="fa-solid fa-caret-down"></i>
+                        <hr>
+                    </div>
+                    <div class="rating mt-3">
+                        <i class="bi bi-star-fill text-warning" data-value="3"></i>
+                        <p class="card-text d-flex align-items-center">
+                            <button type="button" class="btn button me-2 small-button"><i class="fa-regular fa-star"> 5</i></button>
+                            538 Reviews
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 third-card">
+                    <div class="mt-2"><i class="fa-solid fa-shield-heart"></i></div>
+                    <div class="mt-2 text-success">Super deal price</div>
+                    <div class="mt-2" style="font-size: 12px;">Starts from</div>
+                    <div class="mt-2" style="font-size: 18px;">RS 55,000</div>
+                    <div class="mt-2" style="font-size: 10px;">per person on twin sharing</div>
+                    <div class="mt-2" style="font-size: 10px;"><a href="#">from rs1,855/month</a></div>
+                    <button type="button" class="btn btn-warning mt-2" style="width: 73%;">view details</button>
+                    <div class="btn-group mt-2" role="group" aria-label="basic example">
+                        <button type="button" class="btn btn-outline-primary medium-button"><small>Quick quote</small></button>
+                        <button type="button" class="btn btn-outline-dark medium-button" style="margin-left: 5px;"><small>Enquire Now</small></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img src="https://images.pexels.com/photos/10999526/pexels-photo-10999526.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid image-height" alt="img" style="width: 93%;">  
+                    <button type="button" class="btn" style="margin-top: -120px; margin-left: 25px; height: 50px; color: rgb(69, 186, 240); background-color: white;"><i class="fa-regular fa-circle-xmark" style="color: rgb(69, 186, 240); font-size: 16px; padding-bottom: -20px;"></i> &nbsp;compare</button>
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="btn-group mt-2 mb-3" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-outline-warning small-button first">Group Tour</button>
+                        <button type="button" class="btn button small-button">JKHL</button>
+                        <button type="button" class="btn btn-outline-danger rounded small-button" style="margin-left: 5px;" >Family</button>
+                    </div>
+                    <p class="card-title"><b>Seniors special's Kashmir</b></p>
+                    <div class="logo">
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-van-shuttle"></i>
+                        <i class="fa-solid fa-plane"></i>
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <br>
+                    <div class="card-text">
+                        <i class="fa-solid fa-location-dot"></i> Travel 6 Days
+                        <hr>
+                        <i class="fa-solid fa-ticket"></i> 2 Departure cities 16 Departure dates <button class="btn  small-button" style="font-size: 6px; background-color: lightgreen">lowest price 27 Aug,24</button>&nbsp;<i class="fa-solid fa-caret-down"></i>
+                        <hr>
+                    </div>
+                    <div class="rating mt-3">
+                        <i class="bi bi-star-fill text-warning" data-value="3"></i>
+                        <p class="card-text d-flex align-items-center">
+                            <button type="button" class="btn button me-2 small-button"><i class="fa-regular fa-star"> 4</i></button>
+                            34 Reviews
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 third-card">
+                    <div class="mt-2"><i class="fa-solid fa-shield-heart"></i></div>
+                    <div class="mt-2 text-success">Super deal price</div>
+                    <div class="mt-2" style="font-size: 12px;">Starts from</div>
+                    <div class="mt-2" style="font-size: 18px;">RS 50,000</div>
+                    <div class="mt-2" style="font-size: 10px;">per person on twin sharing</div>
+                    <div class="mt-2" style="font-size: 10px;"><a href="#">from rs1,855/month</a></div>
+                    <button type="button" class="btn btn-warning mt-2" style="width: 73%;">view details</button>
+                    <div class="btn-group mt-2" role="group" aria-label="basic example">
+                        <button type="button" class="btn btn-outline-primary medium-button"><small>Quick quote</small></button>
+                        <button type="button" class="btn btn-outline-dark medium-button" style="margin-left: 5px;"><small>Enquire Now</small></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
